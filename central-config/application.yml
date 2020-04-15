@@ -13,7 +13,10 @@
 # Full reference is available at:
 # http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 # ===================================================================
-
+configserver:
+  name: Docker JHipster Registry
+  status: Connected to the JHipster Registry running in Docker
+  
 eureka:
   client:
     enabled: true
@@ -23,6 +26,8 @@ eureka:
     register-with-eureka: true
     instance-info-replication-interval-seconds: 10
     registry-fetch-interval-seconds: 10
+    service-url:
+      defaultZone: http://admin:${jhipster.registry.password}@localhost:8761/eureka/
   instance:
     appname: contract
     instanceId: contract:${spring.application.instance-id:${random.value}}
@@ -209,6 +214,9 @@ jhipster:
     license:
     license-url:
   security:
+    authentication:
+      jwt:
+        secret: my-secret-key-which-should-be-changed-in-production-and-be-base64-encoded
     oauth2:
       audience:
         - account
