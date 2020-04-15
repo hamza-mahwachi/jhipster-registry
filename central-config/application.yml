@@ -156,8 +156,8 @@ spring:
       client:
         provider:
           oidc:
-            issuer-uri: http://172.20.38.42:8171/auth/realms/msbscs
-#            issuer-uri: http://localhost:8171/auth/realms/msbscs
+#            issuer-uri: http://172.20.38.42:8171/auth/realms/msbscs
+            issuer-uri: http://localhost:8171/auth/realms/msbscs
         registration:
           oidc:
             client-id: internal
