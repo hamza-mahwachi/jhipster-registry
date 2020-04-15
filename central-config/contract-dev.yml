@@ -106,10 +106,10 @@ spring:
       probability: 1 # report 100% of traces
   zipkin: # Use the "zipkin" Maven profile to have the Spring Cloud Zipkin dependencies
     base-url: jhipster-zipkin:8187
-    enabled: true
+    enabled: false
     locator:
       discovery:
-        enabled: true
+        enabled: false
 
 server:
   port: 8178
@@ -142,12 +142,12 @@ jhipster:
     base-url: http://127.0.0.1:8178
   metrics:
     logs: # Reports metrics in the logs
-      enabled: true
+      enabled: false
       report-frequency: 60 # in seconds
   logging:
     use-json-format: false # By default, logs are not in Json format
     logstash: # Forward logs to logstash over a socket, used by LoggingConfiguration
-      enabled: true
+      enabled: false
       host: jhipster-logstash
       port: 8185
       queue-size: 512
