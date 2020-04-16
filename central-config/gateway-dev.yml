@@ -24,8 +24,8 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      #defaultZone: http://admin:${jhipster.registry.password}@localhost:8174/eureka/
-      defaultZone: http://admin:${jhipster.registry.password}@172.20.38.42:8174/eureka/
+      defaultZone: http://admin:${jhipster.registry.password}@localhost:8174/eureka/
+      #defaultZone: http://admin:${jhipster.registry.password}@172.20.38.42:8174/eureka/
 
 spring:
   profiles:
