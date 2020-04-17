@@ -21,3 +21,9 @@ bscs:
     hikari:
       poolName: HikariBscs
       auto-commit: false
+application:
+  nameService: "NameService=corbaloc:iiop"
+  orbHost: "ratingPP"
+  orbPort: "9241"
+  orbName: "NameService"
+  soiFfName: "com/lhs/public/soi/fedfactory1"
